@@ -1,8 +1,7 @@
 package chicagoPizza
 
 import (
-	"design-pattern/chapter-04/pizzas"
-	"design-pattern/chapter-04/simpleFactory/pizza"
+	"design-pattern/chapter-04/01-simpleFactory/pizza"
 	"fmt"
 )
 
@@ -19,17 +18,17 @@ func (c ChicagoCheesePizza) Bake() {
 
 // box implements Pizza.
 func (c ChicagoCheesePizza) Box() {
-	fmt.Println("unimplemented")
+	fmt.Println("Box")
 }
 
 // cut implements Pizza.
 func (c ChicagoCheesePizza) Cut() {
-	fmt.Println("unimplemented")
+	fmt.Println("Cut")
 }
 
 // prepare implements Pizza.
 func (c ChicagoCheesePizza) Prepare() {
-	fmt.Println("unimplemented")
+	fmt.Println("Prepare")
 }
 
 type ChicagoFactory struct{}
@@ -37,11 +36,12 @@ type ChicagoFactory struct{}
 func (s *ChicagoFactory) createPizza(pizzaType string) (pizza pizza.IPizza) {
 	if pizzaType == "cheese" {
 		pizza = ChicagoCheesePizza{}
-	} else if pizzaType == "greek" {
-		pizza = pizzas.GreekPizza{}
-	} else if pizzaType == "pepperoni" {
-		pizza = pizzas.PepperoniPizza{}
 	}
+	// else if pizzaType == "greek" {
+	// 	pizza = pizzas.GreekPizza{}
+	// } else if pizzaType == "pepperoni" {
+	// 	pizza = pizzas.PepperoniPizza{}
+	// }
 	return
 }
 
@@ -63,7 +63,7 @@ func (p *pizzaStore) OrderPizza(pizzaType string) (pizza pizza.IPizza) {
 
 	pizza.Prepare()
 	pizza.Bake()
-	pizza.Cut()
+	// pizza.Cut()
 	pizza.Box()
 
 	return pizza

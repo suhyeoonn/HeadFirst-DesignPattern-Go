@@ -1,8 +1,7 @@
 package nyPizza
 
 import (
-	"design-pattern/chapter-04/pizzas"
-	"design-pattern/chapter-04/simpleFactory/pizza"
+	"design-pattern/chapter-04/01-simpleFactory/pizza"
 	"fmt"
 )
 
@@ -11,11 +10,12 @@ type NYPizzaFactory struct{}
 func (s *NYPizzaFactory) createPizza(pizzaType string) (pizza pizza.IPizza) {
 	if pizzaType == "cheese" {
 		pizza = NYCheesePizza{}
-	} else if pizzaType == "greek" {
-		pizza = pizzas.GreekPizza{}
-	} else if pizzaType == "pepperoni" {
-		pizza = pizzas.PepperoniPizza{}
 	}
+	// else if pizzaType == "greek" {
+	// 	pizza = pizzas.GreekPizza{}
+	// } else if pizzaType == "pepperoni" {
+	// 	pizza = pizzas.PepperoniPizza{}
+	// }
 	return
 }
 
