@@ -1,8 +1,8 @@
 package main
 
 import (
-	"design-pattern/chapter-04/01-simpleFactory/chicagoPizza"
-	"design-pattern/chapter-04/01-simpleFactory/nyPizza"
+	"design-pattern/04-chapter/01-simpleFactory/chicagoPizza"
+	"design-pattern/04-chapter/01-simpleFactory/nyPizza"
 	"fmt"
 )
 

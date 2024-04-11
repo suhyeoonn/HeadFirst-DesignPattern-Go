@@ -1,8 +1,8 @@
 package newYorkStore
 
 import (
-	pizzastore "design-pattern/chapter-04/02-factoryMethod/pizzaStore"
-	"design-pattern/chapter-04/pizza"
+	pizzastore "design-pattern/04-chapter/02-factoryMethod/pizzaStore"
+	"design-pattern/04-chapter/pizza"
 )
 
 type NYPizzaStore struct {

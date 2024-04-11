@@ -1,8 +1,8 @@
 package chicagostore
 
 import (
-	"design-pattern/chapter-04/02-factoryMethod/pizzaStore"
-	"design-pattern/chapter-04/pizza"
+	"design-pattern/04-chapter/02-factoryMethod/pizzaStore"
+	"design-pattern/04-chapter/pizza"
 	"fmt"
 )
 

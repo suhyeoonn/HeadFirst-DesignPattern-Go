@@ -1,7 +1,7 @@
 package chicagoPizza
 
 import (
-	"design-pattern/chapter-04/01-simpleFactory/pizza"
+	"design-pattern/04-chapter/01-simpleFactory/pizza"
 	"fmt"
 )
 

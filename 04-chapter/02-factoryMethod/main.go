@@ -1,8 +1,8 @@
 package main
 
 import (
-	chicagostore "design-pattern/chapter-04/02-factoryMethod/chicagoStore"
-	"design-pattern/chapter-04/02-factoryMethod/newYorkStore"
+	chicagostore "design-pattern/04-chapter/02-factoryMethod/chicagoStore"
+	"design-pattern/04-chapter/02-factoryMethod/newYorkStore"
 	"fmt"
 )
 
