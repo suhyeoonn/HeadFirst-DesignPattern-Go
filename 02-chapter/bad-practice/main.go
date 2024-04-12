@@ -1,4 +1,4 @@
-package main
+package badpractice
 
 import "fmt"
 
@@ -31,8 +31,4 @@ func (s StatisticsDisplay) Update(temp, humidity, pressure float64) {
 type ForecaseDisplay struct{}
 func (f ForecaseDisplay) Update(temp, humidity, pressure float64) {
 	fmt.Println(temp, humidity, pressure)
-}
-
-func main() {
-	WeatherData{}.MeasurementsChanged()
 }
